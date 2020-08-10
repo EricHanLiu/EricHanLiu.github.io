@@ -19,11 +19,35 @@
             border: 3px solid black;
             box-shadow: 0 0 0 3px hsl(0, 0%, 100%), 0 0 0 6px hsl(0, 0%, 90%);
         }
+
+        #loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 10vh;
+            height: 10vh;
+            margin: -75px 0 0 -75px;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 <body>
+<div id="loader"></div>
 <div class="hero is-fullheight is-danger">
-    <div class="hero-body">
+    <div class="hero-body" style="display: none;" id="content">
         <div class="container">
             <div class="columns is-vcentered">
                 <div class="column is-6">
@@ -33,12 +57,9 @@
                     <div class="subtitle">
                         aka the trap house
                     </div>
-                    <p>
-                        you gotta wait 7 seconds for the pictures to load lol 
-                    </p>
                 </div>
                 <div class="column is-6">
-                    <div id="images" style="display: none;">
+                    <div id="images">
                     </div>
                 </div>
             </div>
@@ -50,7 +71,7 @@
 <script>
     const NUM_IMAGES = 24;  // number of images to slideshow
 
-    let imageDiv = document.getElementById('images');
+    let imageDiv = $('#images')[0];
     let imageStr = '';
     let slidrArr = [];
     for (let i = 1; i <= NUM_IMAGES; i++) {
@@ -60,7 +81,7 @@
     slidrArr.push('1');
     imageDiv.innerHTML = imageStr;
 
-    setTimeout(() => {  // really janky way of waiting for images to load
+    $(document).ready(() => {
         let s = slidr.create('images', {
             breadcrumbs: true,
             keyboard: true,
@@ -70,8 +91,12 @@
         });
         s.add('h', slidrArr);
         s.start();
-        $('#images').show();
-    }, 7000);
+        $('#loader').fadeOut({
+            complete: () => {
+                $('#content').fadeIn();
+            }
+        });
+    });
 
 </script>
 </html>
