@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apartment 44</title>
+    <link rel="stylesheet" href="/assets/css/bulma.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="/assets/images/logo.png"/>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js"></script>
+    <script defer src="/assets/js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="slidr/slidr.js"></script>
+    <style>
+        img {
+            max-height: 90vh;
+            border: 3px solid black;
+            box-shadow: 0 0 0 3px hsl(0, 0%, 100%), 0 0 0 6px hsl(0, 0%, 90%);
+        }
+    </style>
+</head>
+<body>
+<div class="hero is-fullheight is-danger">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <div class="title">
+                        some memories from living together at apartment 44
+                    </div>
+                    <div class="subtitle">
+                        aka the trap house
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <div id="images">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    const NUM_IMAGES = 24;  // number of images to slideshow
+
+    let imageDiv = document.getElementById('images');
+    let imageStr = '';
+    let slidrArr = [];
+    for (let i = 1; i <= NUM_IMAGES; i++) {
+        imageStr += '<img data-slidr="' + i + '" src="images/img' + i + '.JPG">';
+        slidrArr.push(i.toString());
+    }
+    slidrArr.push('1');
+    imageDiv.innerHTML = imageStr;
+
+    let s = slidr.create('images', {
+        breadcrumbs: true,
+        keyboard: true,
+        controls: 'border',
+        fade: false,
+        touch: true,
+    });
+    s.add('h', slidrArr);
+    s.start();
+
+</script>
+</html>
