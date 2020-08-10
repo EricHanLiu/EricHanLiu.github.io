@@ -33,9 +33,12 @@
                     <div class="subtitle">
                         aka the trap house
                     </div>
+                    <p>
+                        you gotta wait 7 seconds for the pictures to load lol 
+                    </p>
                 </div>
                 <div class="column is-6">
-                    <div id="images">
+                    <div id="images" style="display: none;">
                     </div>
                 </div>
             </div>
@@ -43,6 +46,7 @@
     </div>
 </div>
 </body>
+<script src="/assets/js/jquery.min.js"></script>
 <script>
     const NUM_IMAGES = 24;  // number of images to slideshow
 
@@ -56,15 +60,18 @@
     slidrArr.push('1');
     imageDiv.innerHTML = imageStr;
 
-    let s = slidr.create('images', {
-        breadcrumbs: true,
-        keyboard: true,
-        controls: 'border',
-        fade: false,
-        touch: true,
-    });
-    s.add('h', slidrArr);
-    s.start();
+    setTimeout(() => {  // really janky way of waiting for images to load
+        let s = slidr.create('images', {
+            breadcrumbs: true,
+            keyboard: true,
+            controls: 'border',
+            fade: false,
+            touch: true,
+        });
+        s.add('h', slidrArr);
+        s.start();
+        $('#images').show();
+    }, 7000);
 
 </script>
 </html>
