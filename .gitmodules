@@ -1,6 +1,3 @@
 [submodule "circles.js"]
 	path = circles.js
 	url = https://github.com/EricHanLiu/circles.js
-[submodule "whatsmydrink"]
-	path = whatsmydrink
-	url = git@github.com:EricHanLiu/whatsmydrink.git
