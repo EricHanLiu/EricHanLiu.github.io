@@ -4,3 +4,6 @@
 [submodule "whatsmydrink"]
 	path = whatsmydrink
 	url = https://github.com/EricHanLiu/whatsmydrink.git
+[submodule "sasa"]
+	path = sasa
+	url = git@github.com:EricHanLiu/sasa.git
