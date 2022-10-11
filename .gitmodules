@@ -7,3 +7,6 @@
 [submodule "sasa"]
 	path = sasa
 	url = git@github.com:EricHanLiu/sasa.git
+[submodule "mom"]
+	path = mom
+	url = git@github.com:EricHanLiu/mom.git
