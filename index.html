@@ -1,364 +1,471 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163410468-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-163410468-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-163410468-1');
+      gtag("config", "UA-163410468-1");
     </script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Eric Liu</title>
-    <link rel="stylesheet" href="/assets/css/bulma.css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="/assets/images/logo.png"/>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/bulma.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="/assets/images/logo.png" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js"
+    ></script>
     <script defer src="/assets/js/scripts.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</head>
-<body>
-<div id="backToTopArrow" class="icon"><a><i class="fas fa-arrow-alt-circle-up fa-2x"></i></a></div>
-<div class="hero is-fullheight">
-    <!-- Hero head: will stick at the top -->
-    <div class="hero-head">
+  </head>
+  <body>
+    <div id="backToTopArrow" class="icon">
+      <a><i class="fas fa-arrow-alt-circle-up fa-2x"></i></a>
+    </div>
+    <div class="hero is-fullheight">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
         <header class="navbar has-shadow is-spaced">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="/">
-                        <img src="/assets/images/logo.png">
-                    </a>
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div>
-                <div class="navbar-menu">
-                    <div class="navbar-end">
-                        <a class="navbar-item" href="https://drive.google.com/file/d/1ZgaDzYsO9aZdBfda5zDgVrN_Of3et4tc/view?usp=sharing" target="_blank">
-                            <div class="icon"><i class="far fa-copy" style="color: #35375a;"></i></div>
-                            <strong>CV</strong>
-                        </a>
-                        <a class="navbar-item" href="https://github.com/erichanliu" target="_blank">
-                            <div class="icon"><i class="fab fa-github" style="color: #35375a;"></i></div>
-                            <strong>GitHub</strong>
-                        </a>
-                    </div>
-                </div>
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="/">
+                <img src="/assets/images/logo.png" />
+              </a>
+              <a
+                role="button"
+                class="navbar-burger"
+                aria-label="menu"
+                aria-expanded="false"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
             </div>
+            <div class="navbar-menu">
+              <div class="navbar-end">
+                <a
+                  class="navbar-item"
+                  href="https://drive.google.com/file/d/1ZgaDzYsO9aZdBfda5zDgVrN_Of3et4tc/view?usp=sharing"
+                  target="_blank"
+                >
+                  <div class="icon">
+                    <i class="far fa-copy" style="color: #35375a"></i>
+                  </div>
+                  <strong>CV</strong>
+                </a>
+                <a
+                  class="navbar-item"
+                  href="https://github.com/erichanliu"
+                  target="_blank"
+                >
+                  <div class="icon">
+                    <i class="fab fa-github" style="color: #35375a"></i>
+                  </div>
+                  <strong>GitHub</strong>
+                </a>
+              </div>
+            </div>
+          </div>
         </header>
-    </div>
-    <div class="hero-body">
+      </div>
+      <div class="hero-body">
         <div class="container">
-            <div class="columns is-vcentered">
-                <div class="column is-6 is-offset-1">
-                    <div class="columns is-vcentered">
-                        <div class="column is-6">
-                            <div class="has-text-centered">
-                                <img src="/assets/images/eric_profile.jpg" alt="Profile" id="profileImage"
-                                     data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">
-                            </div>
-                        </div>
-                        <div class="column is-6">
-                            <div id="profileText" class="has-text-centered-mobile">
-                                <h1 class="title is-3" data-aos="fade-right" data-aos-delay="500"
-                                    data-aos-duration="800">
-                                    Hi, I'm Eric.
-                                </h1>
-                                <h2 class="subtitle is-5" data-aos="fade-right" data-aos-duration="1000"
-                                    data-aos-delay="500">
-                                    I'm a software engineer currently based in New York.
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
+          <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-1">
+              <div class="columns is-vcentered">
+                <div class="column is-6">
+                  <div class="has-text-centered">
+                    <img
+                      src="/assets/images/eric_profile.jpg"
+                      alt="Profile"
+                      id="profileImage"
+                      data-aos="zoom-in"
+                      data-aos-delay="500"
+                      data-aos-duration="800"
+                    />
+                  </div>
                 </div>
-                <div class="column is-hidden-mobile is-4" data-aos="fade-left" data-aos-delay="500">
-                    <img src="/assets/images/code.svg">
+                <div class="column is-6">
+                  <div id="profileText" class="has-text-centered-mobile">
+                    <h1
+                      class="title is-3"
+                      data-aos="fade-right"
+                      data-aos-delay="500"
+                      data-aos-duration="800"
+                    >
+                      Hi, I'm Eric.
+                    </h1>
+                    <h2
+                      class="subtitle is-5"
+                      data-aos="fade-right"
+                      data-aos-duration="1000"
+                      data-aos-delay="500"
+                    >
+                      I'm a software engineer currently based in New York.
+                    </h2>
+                  </div>
                 </div>
+              </div>
             </div>
+            <div
+              class="column is-hidden-mobile is-4"
+              data-aos="fade-left"
+              data-aos-delay="500"
+            >
+              <img src="/assets/images/code.svg" />
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="hero-foot">
+      </div>
+      <div class="hero-foot">
         <nav class="tabs is-centered">
-            <div class="container">
-                <ul>
-                    <li class="tab"><a href="#aboutMe">
-                        <div class="icon is-small"><i class="fas fa-info-circle" style="color: #35375a;"></i></div>
-                        <strong class="is-hidden-mobile">About Me</strong>
-                    </a></li>
-                    <li class="tab"><a href="#projects">
-                        <div class="icon is-small"><i class="fas fa-layer-group" style="color: #35375a;"></i></div>
-                        <strong class="is-hidden-mobile">Projects</strong>
-                    </a></li>
-                    <li class="tab"><a href="#performances">
-                        <div class="icon is-small"><i class="fas fa-guitar" style="color: #35375a;"></i></div>
-                        <strong class="is-hidden-mobile">Performances</strong>
-                    </a></li>
-                </ul>
-            </div>
+          <div class="container">
+            <ul>
+              <li class="tab">
+                <a href="#aboutMe">
+                  <div class="icon is-small">
+                    <i class="fas fa-info-circle" style="color: #35375a"></i>
+                  </div>
+                  <strong class="is-hidden-mobile">About Me</strong>
+                </a>
+              </li>
+              <li class="tab">
+                <a href="#projects">
+                  <div class="icon is-small">
+                    <i class="fas fa-layer-group" style="color: #35375a"></i>
+                  </div>
+                  <strong class="is-hidden-mobile">Projects</strong>
+                </a>
+              </li>
+              <li class="tab">
+                <a href="#performances">
+                  <div class="icon is-small">
+                    <i class="fas fa-guitar" style="color: #35375a"></i>
+                  </div>
+                  <strong class="is-hidden-mobile">Performances</strong>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
+      </div>
     </div>
-</div>
-<div class="hero is-fullheight is-light" id="aboutMe">
-    <div class="hero-body">
+    <div class="hero is-fullheight is-light" id="aboutMe">
+      <div class="hero-body">
         <div class="container">
-            <div class="columns">
-                <div class="column">
-                    <h1 class="title is-3" data-aos="zoom-in">
-                        About Me
-                    </h1>
-                    <div class="columns is-vcentered" data-aos="fade-left">
-                        <div class="column is-5">
-                            <a href="https://drive.google.com/file/d/1ZgaDzYsO9aZdBfda5zDgVrN_Of3et4tc/view?usp=sharing" target="_blank">
-                                <div class="box">
-                                    <p>
-                                      I currently work as a software engineer for Google.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column is-2 has-text-centered is-hidden-mobile">
-                            <i class="fab fa-google fa-4x" style="color: #dc4e76;"></i>
-                        </div>
+          <div class="columns">
+            <div class="column">
+              <h1 class="title is-3" data-aos="zoom-in">About Me</h1>
+              <div class="columns is-vcentered" data-aos="fade-left">
+                <div class="column is-5">
+                  <a
+                    href="https://drive.google.com/file/d/1ZgaDzYsO9aZdBfda5zDgVrN_Of3et4tc/view?usp=sharing"
+                    target="_blank"
+                  >
+                    <div class="box">
+                      <p>I currently work as a software engineer for Google.</p>
                     </div>
-                    <div class="columns is-vcentered" data-aos="fade-right">
-                        <div class="column is-2 is-offset-5 has-text-centered is-hidden-mobile">
-                            <i class="fas fa-university fa-4x" style="color: #35375a;"></i>
-                        </div>
-                        <div class="column is-5">
-                            <div class="box">
-                                <a href="https://www.mcgill.ca/" target="_blank">
-                                    <p>
-                                        I studied at McGill University (class of '20), with a major in Computer Science and a minor in
-                                        Economics.
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="columns is-vcentered" data-aos="fade-left">
-                        <div class="column is-5">
-                            <a href="#performances">
-                                <div class="box">
-                                    <p>
-                                        In CEGEP, I studied music at Marianopolis College. 
-                                        While at Marianopolis, I played
-                                        in numerous McGill ensembles and orchestras; feel free to take a look at my
-                                        <span style="color: #cc49b3;">performances</span>!
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column is-2 has-text-centered is-hidden-mobile">
-                            <i class="fas fa-guitar fa-4x" style="color: #cc49b3;"></i>
-                        </div>
-                    </div>
+                  </a>
                 </div>
+                <div class="column is-2 has-text-centered is-hidden-mobile">
+                  <i class="fab fa-google fa-4x" style="color: #dc4e76"></i>
+                </div>
+              </div>
+              <div class="columns is-vcentered" data-aos="fade-right">
+                <div
+                  class="column is-2 is-offset-5 has-text-centered is-hidden-mobile"
+                >
+                  <i class="fas fa-university fa-4x" style="color: #35375a"></i>
+                </div>
+                <div class="column is-5">
+                  <div class="box">
+                    <a href="https://www.mcgill.ca/" target="_blank">
+                      <p>
+                        I studied at McGill University (class of '20), with a
+                        major in Computer Science and a minor in Economics.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="columns is-vcentered" data-aos="fade-left">
+                <div class="column is-5">
+                  <a href="#performances">
+                    <div class="box">
+                      <p>
+                        In CEGEP, I studied music at Marianopolis College. While
+                        at Marianopolis, I played in numerous McGill ensembles
+                        and orchestras; feel free to take a look at my
+                        <span style="color: #cc49b3">performances</span>!
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="column is-2 has-text-centered is-hidden-mobile">
+                  <i class="fas fa-guitar fa-4x" style="color: #cc49b3"></i>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div class="hero is-fullheight" id="projects">
-    <div class="hero-body" style="padding-bottom: 0;">
+    <div class="hero is-fullheight" id="projects">
+      <div class="hero-body" style="padding-bottom: 0">
         <div class="container">
-            <div class="columns is-vcentered">
-                <div class="column is-8">
-                    <h1 class="title is-3" data-aos="zoom-in">
-                        Projects
-                    </h1>
-                    <p data-aos="fade-right">
-                        I've worked on a number of open source projects, some of which I've showcased below.
-                    </p>
-                    <div class="columns is-multiline" data-aos="fade-left" style="margin-top: 1em;">
-                        <div class="column is-4">
-                            <a href="/circles.js" target="_blank">
-                                <div class="box">
-                                    <div>
-                                        <h5 class="title is-5">
-                                            Circles.js
-                                        </h5>
-                                        <p>A small browser based game where you try to grow your circle</p>
-                                    </div>
-                                    <div class="tag is-rounded is-warning" style="margin-top: 1em;">JavaScript</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column is-4">
-                            <a href="https://ddmal.music.mcgill.ca/diva.js/try/single.html" target="_blank">
-                                <div class="box">
-                                    <div>
-                                        <h5 class="title is-5">
-                                            Diva.js
-                                        </h5>
-                                        <p>
-                                            A web-based high-resolution document viewer optimized for speed through AJAX calls
-                                        </p>
-                                    </div>
-                                    <div class="tag is-rounded is-warning" style="margin-top: 1em;">JavaScript</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column is-4">
-                            <a href="https://ddmal.music.mcgill.ca/IIIF-AV-player/" target="_blank">
-                                <div class="box">
-                                    <div>
-                                        <h5 class="title is-5">
-                                                IIIF AV Player
-                                        </h5>
-                                        <p>A IIIF v3.0 compatible A/V media player, synced with a rendered score</p>
-                                    </div>
-                                    <div class="tag is-rounded is-warning" style="margin-top: 1em;">JavaScript</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column is-4">
-                            <a href="https://github.com/EricHanLiu/quotes" target="_blank">
-                                <div class="box">
-                                    <div>
-                                        <h5 class="title is-5">
-                                                Quotes
-                                        </h5>
-                                        <p>A script to display inspirational Twitter quotes on your monitor</p>
-                                    </div>
-                                    <div class="tag is-rounded is-link" style="margin-top: 1em;">Python</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column is-4">
-                            <a href="/whatsmydrink" target="_blank">
-                                <div class="box">
-                                    <div>
-                                        <h5 class="title is-5">
-                                                What's My Drink
-                                        </h5>
-                                        <p>A site to share your favorite drink and its recipe</p>
-                                    </div>
-                                    <div class="tag is-rounded is-warning" style="margin-top: 1em;">JavaScript</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column is-4 has-text-centered" style="align-self: center; margin-top: 1em;">
-                            <a href="https://github.com/EricHanLiu" target="_blank">
-                                <div class="icon"><i class="fab fa-github fa-4x"></i></div>
-                                <p>More of my projects can be found on my GitHub</p>
-                            </a>
-                        </div>
+          <div class="columns is-vcentered">
+            <div class="column is-8">
+              <h1 class="title is-3" data-aos="zoom-in">Projects</h1>
+              <p data-aos="fade-right">
+                I've worked on a number of open source projects, some of which
+                I've showcased below.
+              </p>
+              <div
+                class="columns is-multiline"
+                data-aos="fade-left"
+                style="margin-top: 1em"
+              >
+                <div class="column is-4">
+                  <a href="/circles.js" target="_blank">
+                    <div class="box">
+                      <div>
+                        <h5 class="title is-5">Circles.js</h5>
+                        <p>
+                          A small browser based game where you try to grow your
+                          circle
+                        </p>
+                      </div>
+                      <div
+                        class="tag is-rounded is-warning"
+                        style="margin-top: 1em"
+                      >
+                        JavaScript
+                      </div>
                     </div>
+                  </a>
                 </div>
-                <div class="column is-4" style="margin: 5vh 0;" data-aos="zoom-in">
-                    <img src="/assets/images/art.svg">
+                <div class="column is-4">
+                  <a
+                    href="https://ddmal.music.mcgill.ca/diva.js/try/single.html"
+                    target="_blank"
+                  >
+                    <div class="box">
+                      <div>
+                        <h5 class="title is-5">Diva.js</h5>
+                        <p>
+                          A web-based high-resolution document viewer optimized
+                          for speed through AJAX calls
+                        </p>
+                      </div>
+                      <div
+                        class="tag is-rounded is-warning"
+                        style="margin-top: 1em"
+                      >
+                        JavaScript
+                      </div>
+                    </div>
+                  </a>
                 </div>
+                <div class="column is-4">
+                  <a
+                    href="https://ddmal.music.mcgill.ca/IIIF-AV-player/"
+                    target="_blank"
+                  >
+                    <div class="box">
+                      <div>
+                        <h5 class="title is-5">IIIF AV Player</h5>
+                        <p>
+                          A IIIF v3.0 compatible A/V media player, synced with a
+                          rendered score
+                        </p>
+                      </div>
+                      <div
+                        class="tag is-rounded is-warning"
+                        style="margin-top: 1em"
+                      >
+                        JavaScript
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="column is-4">
+                  <a
+                    href="https://github.com/EricHanLiu/quotes"
+                    target="_blank"
+                  >
+                    <div class="box">
+                      <div>
+                        <h5 class="title is-5">Quotes</h5>
+                        <p>
+                          A script to display inspirational Twitter quotes on
+                          your monitor
+                        </p>
+                      </div>
+                      <div
+                        class="tag is-rounded is-link"
+                        style="margin-top: 1em"
+                      >
+                        Python
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="column is-4">
+                  <a href="/whatsmydrink" target="_blank">
+                    <div class="box">
+                      <div>
+                        <h5 class="title is-5">What's My Drink</h5>
+                        <p>
+                          A site to share your favorite drink and its recipe
+                        </p>
+                      </div>
+                      <div
+                        class="tag is-rounded is-warning"
+                        style="margin-top: 1em"
+                      >
+                        JavaScript
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="column is-4 has-text-centered"
+                  style="align-self: center; margin-top: 1em"
+                >
+                  <a href="https://github.com/EricHanLiu" target="_blank">
+                    <div class="icon"><i class="fab fa-github fa-4x"></i></div>
+                    <p>More of my projects can be found on my GitHub</p>
+                  </a>
+                </div>
+              </div>
             </div>
+            <div class="column is-4" style="margin: 5vh 0" data-aos="zoom-in">
+              <img src="/assets/images/art.svg" />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div class="hero is-fullheight" id="performances">
-    <div class="hero-body" style="padding-top: 0;">
+    <div class="hero is-fullheight" id="performances">
+      <div class="hero-body" style="padding-top: 0">
         <div class="container">
-            <div class="columns is-vcentered">
-                <div class="column is-4 is-hidden-mobile" data-aos="zoom-in" style="margin-top: 4em;">
-                    <img src="/assets/images/listening.svg">
-                </div>
-                <div class="column is-8">
-                    <h1 class="title is-3 has-text-right" data-aos="zoom-in">
-                        Performances
-                    </h1>
-                    <p data-aos="fade-right" class="has-text-right">I've developed an extensive portfolio of
-                        professional performances. Here are a few of my favorites!</p>
-                    <div class="columns is-multiline" data-aos="fade-left" style="margin-top: 1em;">
-                        <div class="column is-6">
-                            <a href="https://www.youtube.com/watch?v=EQT3tDs1NY4&feature=youtu.be"
-                                   target="_blank">
-                                <div class="box">
-                                    <h5 class="title is-5">
-                                            Bonneau - Caprice
-                                    </h5>
-                                    <p>2016 Prix d'Expression competition, first place</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column is-6">
-                            <a href="https://youtu.be/_IUcGjPsktI"
-                                   target="_blank">
-                                <div class="box">
-                                    <h5 class="title is-5">
-                                            Glazunov - Concerto
-                                    </h5>
-                                    <p>
-                                        McGill Fall 2016 saxophone class final recital
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column is-6">
-                            <a href="https://youtu.be/yMt6shkXLAA" target="_blank">
-                                <div class="box">
-                                    <h5 class="title is-5">
-                                            Iturralde - Pequeña Czarda
-                                    </h5>
-                                    <p>McGill Winter 2017 saxophone class final recital</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column is-6">
-                            <a href="https://www.youtube.com/watch?v=2JDIJ5YytDQ" target="_blank">
-                                <div class="box">
-                                    <h5 class="title is-5">
-                                            Bozza - Aria
-                                    </h5>
-                                    <p>McGill Conservatory 2014 Gala concert</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+          <div class="columns is-vcentered">
+            <div
+              class="column is-4 is-hidden-mobile"
+              data-aos="zoom-in"
+              style="margin-top: 4em"
+            >
+              <img src="/assets/images/listening.svg" />
             </div>
+            <div class="column is-8">
+              <h1 class="title is-3 has-text-right" data-aos="zoom-in">
+                Performances
+              </h1>
+              <p data-aos="fade-right" class="has-text-right">
+                I've developed an extensive portfolio of professional
+                performances. Here are a few of my favorites!
+              </p>
+              <div
+                class="columns is-multiline"
+                data-aos="fade-left"
+                style="margin-top: 1em"
+              >
+                <div class="column is-6">
+                  <a
+                    href="https://www.youtube.com/watch?v=EQT3tDs1NY4&feature=youtu.be"
+                    target="_blank"
+                  >
+                    <div class="box">
+                      <h5 class="title is-5">Bonneau - Caprice</h5>
+                      <p>2016 Prix d'Expression competition, first place</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="column is-6">
+                  <a href="https://youtu.be/_IUcGjPsktI" target="_blank">
+                    <div class="box">
+                      <h5 class="title is-5">Glazunov - Concerto</h5>
+                      <p>McGill Fall 2016 saxophone class final recital</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="column is-6">
+                  <a href="https://youtu.be/yMt6shkXLAA" target="_blank">
+                    <div class="box">
+                      <h5 class="title is-5">Iturralde - Pequeña Czarda</h5>
+                      <p>McGill Winter 2017 saxophone class final recital</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="column is-6">
+                  <a
+                    href="https://www.youtube.com/watch?v=2JDIJ5YytDQ"
+                    target="_blank"
+                  >
+                    <div class="box">
+                      <h5 class="title is-5">Bozza - Aria</h5>
+                      <p>McGill Conservatory 2014 Gala concert</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 
-<script src="/assets/js/jquery.min.js"></script>
-<script>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script>
     $(document).ready(() => {
-        $('.fadein-img').css('opacity', '1');
-        setTimeout(() => {
-            $('.fadein').css('opacity', '1');
-        }, 500);
+      $(".fadein-img").css("opacity", "1");
+      setTimeout(() => {
+        $(".fadein").css("opacity", "1");
+      }, 500);
 
-        AOS.init({
-            duration: 700,
-        });
+      AOS.init({
+        duration: 700,
+      });
 
-        let threshold = $(window).height() / 2;
-        let $backToTopArrow = $('#backToTopArrow');
+      let threshold = $(window).height() / 2;
+      let $backToTopArrow = $("#backToTopArrow");
 
-        if ($(document).scrollTop() > threshold) {
-            $backToTopArrow.css('opacity', '1');
-            $backToTopArrow.css('pointer-events', 'auto');
+      if ($(document).scrollTop() > threshold) {
+        $backToTopArrow.css("opacity", "1");
+        $backToTopArrow.css("pointer-events", "auto");
+      }
+
+      $(document).scroll(function () {
+        let scroll = $(this).scrollTop();
+        if (scroll > threshold) {
+          $backToTopArrow.css("opacity", "1");
+          $backToTopArrow.css("pointer-events", "auto");
+        } else {
+          $backToTopArrow.css("opacity", "0");
+          $backToTopArrow.css("pointer-events", "none");
         }
+      });
 
-        $(document).scroll(function () {
-            let scroll = $(this).scrollTop();
-            if (scroll > threshold) {
-                $backToTopArrow.css('opacity', '1');
-                $backToTopArrow.css('pointer-events', 'auto');
-            } else {
-                $backToTopArrow.css('opacity', '0');
-                $backToTopArrow.css('pointer-events', 'none');
-            }
-        });
-
-        $backToTopArrow.click(() => {
-            $(document).scrollTop(0);
-        });
+      $backToTopArrow.click(() => {
+        $(document).scrollTop(0);
+      });
     });
-</script>
+  </script>
 </html>

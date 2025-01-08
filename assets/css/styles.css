@@ -1,53 +1,54 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Rubik', sans-serif;
-    width: 100%;
-    overflow-x: hidden;
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.tab:hover, a.navbar-item:hover {
-    background-color: navajowhite;
+.tab:hover,
+a.navbar-item:hover {
+  background-color: navajowhite;
 }
 
 .tab {
-    border-radius: 5%;
-    transition: 0.3s;
+  border-radius: 5%;
+  transition: 0.3s;
 }
 
 #profileImage {
-    border-radius: 100%;
-    border: 1px solid black;
-    box-shadow: 0 0 0 3px hsl(0, 0%, 100%), 0 0 0 6px hsl(0, 0%, 90%);
+  border-radius: 100%;
+  border: 1px solid black;
+  box-shadow: 0 0 0 3px hsl(0, 0%, 100%), 0 0 0 6px hsl(0, 0%, 90%);
 }
 
 #aboutMe {
-    box-shadow: 0 1px 10px 5px rgb(250, 200, 200);
+  box-shadow: 0 1px 10px 5px rgb(250, 200, 200);
 }
 
 .title.is-5 {
-    color: #dc4e76;
+  color: #dc4e76;
 }
 
 a {
-    color: #dc4e76;
-    transition: 0.3s;
+  color: #dc4e76;
+  transition: 0.3s;
 }
 
 a:hover {
-    color: #35375a;
+  color: #35375a;
 }
 
 #backToTopArrow {
-    position: fixed;
-    right: 5vh;
-    bottom: 5vh;
-    z-index: 10;
-    opacity: 0;
-    transition: opacity 0.3s linear;
-    pointer-events: none;
+  position: fixed;
+  right: 5vh;
+  bottom: 5vh;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  pointer-events: none;
 }
 
 .box {
@@ -64,5 +65,9 @@ a:hover {
 }
 
 .tag {
-    width: fit-content;
+  width: fit-content;
+}
+
+.hero.is-fullheight {
+  min-height: 100svh;
 }

@@ -1,3 +1,3 @@
-$('.navbar-burger').click(() => {
-  $('.navbar-menu').toggleClass('is-active');
+$(".navbar-burger").click(() => {
+  $(".navbar-menu").toggleClass("is-active");
 });
